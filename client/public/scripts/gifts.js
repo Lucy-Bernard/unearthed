@@ -1,7 +1,9 @@
 const renderGifts = async () => {
   const response = await fetch("/gifts");
   const data = await response.json();
-  console.log("all gifts", data);
+  const mainContent = document.getElementById("main-content");
+  //   console.log("all gifts", data);
+
   if (data) {
     data.map((gift) => {
       console.log("gift", gift);
@@ -19,12 +21,16 @@ const renderGifts = async () => {
       giftName.textContent = gift.name;
       bottomContainer.appendChild(giftName);
 
+      const pricePoint = document.createElement("p");
+      pricePoint.textContent = "Price: " + gift.pricePoint;
+      bottomContainer.appendChild(pricePoint);
+
       const giftAudience = document.createElement("p");
       giftAudience.textContent = `Greate For: ${gift.audience}`;
       bottomContainer.appendChild(giftAudience);
 
       const readMoreLink = document.createElement("a");
-      readMoreLink.textContent = "Read More > ";
+      readMoreLink.textContent = "Read More";
       readMoreLink.href = `/gifts/${gift.id}`;
       bottomContainer.appendChild(readMoreLink);
 
@@ -39,5 +45,4 @@ const renderGifts = async () => {
   }
 };
 
-const mainContent = document.getElementById("main-content");
 renderGifts();
