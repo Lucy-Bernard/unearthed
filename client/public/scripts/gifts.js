@@ -6,7 +6,7 @@ const renderGifts = async () => {
 
   if (data) {
     data.map((gift) => {
-      console.log("gift", gift);
+      //   console.log("gift", gift);
       const card = document.createElement("div");
       card.classList.add("card");
 
@@ -45,4 +45,11 @@ const renderGifts = async () => {
   }
 };
 
-renderGifts();
+// if the url is not domainname.com/ then send to 404
+// home page should only render at path "/"
+const requestedURL = parseInt(window.location.href.split("/").pop());
+if (requestedURL) {
+  window.location.href = "../404.html";
+} else {
+  renderGifts();
+}

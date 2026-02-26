@@ -6,7 +6,7 @@ const renderGifts = async () => {
 
   if (data) {
     data.map((gift) => {
-      console.log("gift", gift);
+      //   console.log("gift", gift);
       const card = document.createElement("div");
       card.classList.add("card");
 
@@ -30,7 +30,7 @@ const renderGifts = async () => {
       bottomContainer.appendChild(giftAudience);
 
       const readMoreLink = document.createElement("a");
-      readMoreLink.textContent = "Read More > ";
+      readMoreLink.textContent = "Read More";
       readMoreLink.href = `/gifts/${gift.id}`;
       bottomContainer.appendChild(readMoreLink);
 
@@ -45,4 +45,9 @@ const renderGifts = async () => {
   }
 };
 
-renderGifts();
+const requestedURL = parseInt(window.location.href.split("/").pop());
+if (requestedURL) {
+  window.location.href = "../404.html";
+} else {
+  renderGifts();
+}

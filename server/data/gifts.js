@@ -5,7 +5,7 @@ const giftData = [
     pricePoint: "$",
     audience: "Artists",
     image:
-      "https://thecoffeemonsterzco.com/cdn/shop/files/TCMC_Digital_0.png?v=1763098011&width=1200",
+      "https://thecoffeemonsterzco.com/cdn/shop/products/02_2023_Sun.png?v=1671136673",
     description:
       "Dreamy translucent vellum paper perfect for journaling, art projects, and overlays",
     submittedBy: "Samwise Gamgee",
@@ -15,7 +15,7 @@ const giftData = [
     id: 2,
     name: "Garage Sweatpants",
     pricePoint: "$",
-    audience: "Cozy Girls",
+    audience: "Dancers",
     image:
       "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQQSK2zfc-DCyHy-LHcqC14Ljsgvd6Q8jvqVdn7dQb-9M12e-BV9B-jNS_VgRPW7rqCKTKj1fTUJAbt80rANRD4ErYJ9wBL",
     description:
@@ -27,7 +27,7 @@ const giftData = [
     id: 3,
     name: "QMK65 Mechanical Keyboard",
     pricePoint: "$$$",
-    audience: "Gamers",
+    audience: "Computer Enthusiasts",
     image:
       "https://www.nouvolo.com/cdn/shop/files/qmk65-green3.jpg?v=1751001951&width=1445",
     description:
@@ -39,7 +39,7 @@ const giftData = [
     id: 4,
     name: "Koala & Joey Lego Set",
     pricePoint: "$$",
-    audience: "Animal Lovers",
+    audience: "Koala People",
     image:
       "https://www.funstra.com/blog/wp-content/uploads/2022/04/koala-joey-lego-bricks.jpg",
     description:
@@ -51,7 +51,7 @@ const giftData = [
     id: 5,
     name: "Bunny iPad Case",
     pricePoint: "$",
-    audience: "Kawaii Lovers",
+    audience: "Ipad Lovers",
     image:
       "https://kawaiibabe.com/cdn/shop/files/bunny-ipad-protective-case-computer-covers-skins-bunny-case-cats-164_800x.jpg?v=1726444317",
     description:
@@ -86,7 +86,7 @@ const giftData = [
     id: 8,
     name: "Totoro Figurine",
     pricePoint: "$",
-    audience: "Anime Lovers",
+    audience: "Studio Ghibli Lovers",
     image:
       "https://i.etsystatic.com/49454025/r/il/90abbd/5693074698/il_fullxfull.5693074698_k8qw.jpg",
     description:

@@ -10,7 +10,7 @@ headerLeft.className = "header-left";
 
 // <img src="" />
 const headerLogo = document.createElement("img");
-headerLogo.src = "logo.png";
+headerLogo.src = "/logo.png";
 
 //<h1>unEarthed</h1>
 const title = document.createElement("h1");

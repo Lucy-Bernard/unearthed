@@ -37,6 +37,7 @@
 
 .header-right button {
   background-color: white;
+  font-family: inherit;
   border: solid;
   border-width: 3px;
   border-color: rgb(232, 148, 210, 0.873);
@@ -142,22 +143,37 @@ main {
   }
 }
 
-/* Detail Page CSS*/
-
+/* Detail Page CSS */
 .gift-info {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  padding: 40px 20px;
 }
-
 .image-container {
   padding-left: 100px;
-  width: 40vw;
+  width: 25vw;
 }
-
 .image-container img {
   width: 80%;
+  border-radius: 1rem;
+  border: 1px solid rgba(232, 148, 210, 0.873);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.057);
 }
-
 .gift-details {
   width: 45vw;
+  padding-left: 40px;
+}
+.gift-details h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.gift-details p {
+  margin: 6px 0;
+  font-size: small;
+}
+.gift-details a {
+  color: rgb(228, 16, 133);
+  text-decoration: none;
+  font-size: small;
 }

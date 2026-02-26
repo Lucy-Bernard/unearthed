@@ -10,11 +10,12 @@ headerLeft.className = "header-left";
 
 // <img src="" />
 const headerLogo = document.createElement("img");
-headerLogo.src = "logo.png";
+headerLogo.src = "/logo.png";
 
 //<h1>unEarthed</h1>
 const title = document.createElement("h1");
 title.textContent = "unEarthed";
+title.innerHTML = "<em>un</em>Earthed";
 
 // append elements to headerLeft div
 headerLeft.appendChild(headerLogo);
